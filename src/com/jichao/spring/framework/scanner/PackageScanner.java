@@ -22,7 +22,7 @@ public class PackageScanner {
      * @return Map<全限定类名, 类的反射实例>
      */
     public static Map<String, Class<?>> scanner(String packageName) {
-        Map<String, Class<?>> classes = new HashMap<>();
+        Map<String, Class<?>> classes = new HashMap<String, Class<?>>();
         packageName = packageName.replace(".", "/");
         try {
             //根目录
